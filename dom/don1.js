@@ -15,7 +15,7 @@ head2.textContent = "<i> we are learners</i>"
 document.getElementById('para').innerHTML= "paragraph"
 
 let a = document.getElementsByTagName('li')
-for (let i = 0;i<9;i++){
+for (let i = 0;i<10;i++){
     if (i==0){
         a[i].style.backgroundColor = "yellow"
     }
