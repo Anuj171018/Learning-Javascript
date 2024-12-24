@@ -3,6 +3,8 @@ function validate() {
     let age = document.querySelector("#age").value
     let contact = document.querySelector("#contact").value
     let email = document.querySelector("#email").value
+    let password = document.querySelector("#password").value
+    let cpassword = document.querySelector("#cpassword").value
 
     if(name == ""){
         alert("please enter your name")
@@ -39,6 +41,25 @@ function validate() {
         document.querySelector("#email").focus()
         return false
     }
-    
-    
+    else if(password==""){
+        alert("Please enter the password")
+        document.querySelector("#password").focus()
+        return false
+    }
+    else if(!(password.match(/[~!@#$%&*<>{}]/))){
+        alert("please Enter atleast one special character")
+        document.querySelector("#password").focus()
+        return false
+    }
+    else if(password==""){
+        alert("Please confirm password")
+        document.querySelector("#cpassword").focus()
+        return false
+    }
+    else if(password!=cpassword){
+        alert("Password mismatch")
+        document.querySelector("#cpassword").focus()
+        return false
+    }
+
 }
