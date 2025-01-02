@@ -17,4 +17,3 @@ for (let k in ob){
 for (let k in ob){
     console.log(ob[k]);
 }
-
