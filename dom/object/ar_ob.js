@@ -9,6 +9,7 @@ let employee = [
         emp_name : "Ayush",
         emp_designation:"Developer" 
     }
+    
 ]
 
 // console.log(employee);
