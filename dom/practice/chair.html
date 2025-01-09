@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-image: url(color.jpg);
+        }
+        .sec1{
+            display: flex;
+            gap: 5px;
+            
+        }
+        .sec2{
+            display: flex;
+            gap: 5px;
+            
+        }
+        .head{
+            margin-top: 150px;
+        }
+        .purple{
+            padding-left: 180px;
+            font-size: 60px;
+        
+        
+        }
+        .purple i {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 100%;
+
+        }
+        .blue{
+            padding-left: 180px;
+            font-size: 60px;
+           
+        }
+        .blue i{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 100%;
+        }
+        .purple i:hover{
+            background-color: purple;
+            font-size: 80px;
+            padding: 30px;
+        }
+        .blue i:hover{
+            background-color: blue;
+            font-size: 80px;
+            padding: 30px;
+        }
+        .first{
+            background-color: purple;
+            font-size: 80px;
+            padding: 30px;
+        }
+        .second{
+            background-color: blue;
+            font-size: 80px;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center" class="head">Luxury Chair</h1>
+    <div class="sec1">
+        <div class="purple"><i class="fa-solid fa-chair" id="a" onclick="fun1()"></i></div>
+        <div class="blue"><i class="fa-solid fa-chair" id="b" onclick="fun2()"></i></div>
+        <div class="blue"><i class="fa-solid fa-chair" id="c" onclick="fun3()"></i></div>
+        <div class="purple"><i class="fa-solid fa-chair" id="d" onclick="fun4()"></i></div>
+        
+        
+    </div>
+    <h1 align="center">Normal Chair</h1>
+    <div class="sec2">
+        <div class="purple"><i class="fa-solid fa-chair" id="e" onclick="fun5()"></i></div>
+        <div class="blue"><i class="fa-solid fa-chair" id="f" onclick="fun6()"></i></div>
+        <div class="blue"><i class="fa-solid fa-chair" id="g" onclick="fun7()"></i></div>
+        <div class="purple"><i class="fa-solid fa-chair" id="h" onclick="fun8()"></i></div>
+        
+        
+    </div>
+    <h1 align="center" id="total"></h1>
+    
+
+
+
+    <script src="chair.js"></script>
+</body>
+</html>
