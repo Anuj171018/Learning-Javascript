@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="imgcode"></p>
+    <img src="" alt="" height="" width="">
+    <!-- <button onclick="random()">Click here to generate image</button> -->
+    <script>
+         let ar = ["p1.png","p2.png","p3.png","p4.png","p5.png","p6.png","p7.png","p8.png","p9.png"]
+        
+       const random=()=>{
+        let y = Math.floor(Math.random()*ar.length)
+        document.getElementById("imgcode").innerHTML="<img src="+ar[y]+" height ='200px' width='300px'>"
+       }
+       setInterval('random()', 1000);
+
+    </script>
+</body>
+</html>
