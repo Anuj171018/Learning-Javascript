@@ -30,7 +30,7 @@
 // console.log(stu);
 
 let ar=[1,2,3,4,5,6,7,8,9,10]
-let n = ar.map((n)=>{return n>5})
+let n = ar.map((n)=>{return n>56})
 console.log(n);
 
 
