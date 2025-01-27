@@ -7,6 +7,7 @@ h.style.fontSize = "80px"
 h.style.backgroundColor = "yellow"
 h.innerHTML="<i>We are developers</i>"
 
+
 let head = document.getElementById('head2')
 head2.style.cssText = "background-color: red ; color: white; padding: 40px"
 
