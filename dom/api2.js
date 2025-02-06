@@ -23,4 +23,24 @@ function mydelete(id){
         method:"DELETE"
     })
     .then(res=>alert("delete.......!"))
+    location.reload()
+}
+
+function savedata(){
+    let frmdata = {
+        name:document.querySelector("#name").value,
+        age:document.querySelector("#age").value,
+        contact:document.querySelector("#contact").value,
+        city:document.querySelector("#city").value
+    }
+
+
+    fetch("http://localhost:3000/Student",{
+        method:"POST",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify(frmdata)
+    })
+    .then(r=>alert("Data inserted successfully.....!"))
 }
