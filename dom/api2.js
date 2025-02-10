@@ -33,8 +33,6 @@ function savedata(){
         contact:document.querySelector("#contact").value,
         city:document.querySelector("#city").value
     }
-
-
     fetch("http://localhost:3000/Student",{
         method:"POST",
         headers:{
@@ -42,5 +40,6 @@ function savedata(){
         },
         body:JSON.stringify(frmdata)
     })
+    
     .then(r=>alert("Data inserted successfully.....!"))
 }
